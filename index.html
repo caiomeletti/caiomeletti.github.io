@@ -1,1 +1,443 @@
-"Hello!" 
+<!DOCTYPE html>
+<html lang="pt_BR">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Control iD - iDSecure - Release Notes</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href=".">Control iD - iDSecure - Release Notes</a>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#releases" class="nav-link">Releases</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#versao-20231226" class="nav-link">Versão 2023.12.26</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#hotfix-20231221" class="nav-link">Hotfix 2023.12.21</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#versao-20231219" class="nav-link">Versão 2023.12.19</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#versao-20231211" class="nav-link">Versão 2023.12.11</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#versao-20231204" class="nav-link">Versão 2023.12.04</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#versao-20231127" class="nav-link">Versão 2023.11.27</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#versao-20231121" class="nav-link">Versão 2023.11.21</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#versao-20231113" class="nav-link">Versão 2023.11.13</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#versao-20231030" class="nav-link">Versão 2023.10.30</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#hotfix-20231026" class="nav-link">Hotfix 2023.10.26</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#versao-20231023" class="nav-link">Versão 2023.10.23</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#hotfix-20231018" class="nav-link">Hotfix 2023.10.18</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#versao-20231016" class="nav-link">Versão 2023.10.16</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#hotfix-20231010" class="nav-link">Hotfix 2023.10.10</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#versao-20231009" class="nav-link">Versão 2023.10.09</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#hotfix-20231004" class="nav-link">Hotfix 2023.10.04</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#versao-20230929" class="nav-link">Versão 2023.09.29</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#hotfix-20230927" class="nav-link">Hotfix 2023.09.27</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#hotfix-20230923" class="nav-link">Hotfix 2023.09.23</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#versao-20230922" class="nav-link">Versão 2023.09.22</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#hotfix-20230921" class="nav-link">Hotfix 2023.09.21</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#hotfix-20230918" class="nav-link">Hotfix 2023.09.18</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#versao-20230519" class="nav-link">Versão 2023.05.19</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#versao-20230419" class="nav-link">Versão 2023.04.19</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#versao-20230418" class="nav-link">Versão 2023.04.18</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="releases">Releases</h1>
+<h2 id="versao-20231226">Versão 2023.12.26</h2>
+<table>
+<thead>
+<tr>
+<th>23/12/2023</th>
+<th>Versão 2023.12.26</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>Correção no carregamento da tela de Monitoramento de Alarmes.</td>
+</tr>
+<tr>
+<td></td>
+<td>Novo controle de rotas na seção de Modo de Operação na tela de Dispositivos.</td>
+</tr>
+<tr>
+<td></td>
+<td>Ajuste no relatório de Registro de Fotos de Pessoas para filtrar por status.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="hotfix-20231221">Hotfix 2023.12.21</h2>
+<ul>
+<li>Correção na busca de Pessoas / Visitantes.</li>
+</ul>
+<h2 id="versao-20231219">Versão 2023.12.19</h2>
+<ul>
+<li>Solução vincular o iDUHF para um estacionamento.</li>
+<li>Melhoria de performance na tela de Dashboard.</li>
+<li>Ativação configurações da iDFace para catraca iDBlock Next.</li>
+<li>Adicionado nova funcionalidade de Busca Avaçada em Pessoas / Visitantes.</li>
+<li>Correção mensagem de erro incoerente com a ação Gerenciamento de Créditos.</li>
+<li>Adicionado nova funcionalidade mensagem padrão de aviso de bloqueio em Configurações.</li>
+<li>Adicionado nova funcionalidade adicionar ao cadastro de visitantes a indicação de Empresa e Pessoa visitada.</li>
+</ul>
+<h2 id="versao-20231211">Versão 2023.12.11</h2>
+<ul>
+<li>Correção do erro ao salvar foto no cadastro de pessoas e visitantes.</li>
+<li>Correção do erro ao excluir Pessoa/Visitante com vínculo de documentos.</li>
+<li>Melhoria de performance nas telas de Pessoas, Visitantes, Veículos, Dispositivos e Regra de acesso.</li>
+<li>Adição da aba Sincronização na edição de dispositivos.</li>
+</ul>
+<h2 id="versao-20231204">Versão 2023.12.04</h2>
+<ul>
+<li>Otimização de performance na tela de Monitoramento de Acessos.</li>
+<li>Correção da tela de edição do cadastro de pessoas.</li>
+<li>Vínculo de perfil de acesso direto na tela de cadastro de pessoas.</li>
+<li>Liberação de importação de arquivos ZIP apenas operadores ADMIN.</li>
+<li>Melhorias operacionais na tela de Perfil de Acesso.</li>
+<li>Correção ao salvar os parâmetros na tela de Configurações.</li>
+<li>Bloqueio de acesso ao sistema para operadores Inativados ou Exclúidos.</li>
+<li>Correção na tratativa da saída de visitante utilizando urna ativa.</li>
+</ul>
+<h2 id="versao-20231127">Versão 2023.11.27</h2>
+<ul>
+<li>Correção no retorno de log com ID zerado.</li>
+<li>Bloqueio na edição do cadastro de uma pessoa que seja operador administrador.</li>
+<li>Bloqueio na edição do perfil de acesso pelo próprio operador na tela de pessoas e perfis de acesso.</li>
+<li>Ativação da escolha de perfil de acesso no cadastro de pessoas.</li>
+<li>Correção no filtro de grupos e empresas na edição de crédito em lote.</li>
+<li>Correção no filtro e paginação na tela de Dispositivos.</li>
+<li>Correção lentidão na tela de Monitoramento de Acessos.</li>
+</ul>
+<h2 id="versao-20231121">Versão 2023.11.21</h2>
+<ul>
+<li>Correção da falha ao promover visitante para usuário.</li>
+<li>Correção da falha com gerenciamento de créditos.</li>
+<li>Melhoria na lentidão na tela de gerenciamento de créditos.</li>
+<li>Correção da falha ao cadastrar cartão para pessoas.</li>
+<li>Correção da exibição da AREA.DEFAULT na exportação CSV.</li>
+<li>Correção na exibição de duplicidade de Logs de acesso.</li>
+<li>Correção na exibição de grupos e empresas duplicadas na tela de regras de acesso.</li>
+</ul>
+<h2 id="versao-20231113">Versão 2023.11.13</h2>
+<ul>
+<li>Tratativa para permitir que documentos possam ser reutilizados em cadastros de operadores diferentes.</li>
+<li>Correção no horário de inicio de liberação via API.</li>
+<li>Melhoria nos componentes do tipo data/hora no cadastro de pessoas e visitantes.</li>
+<li>Correção no filtro de busca pelo tipo de crédito na tela de Gerenciamento de Créditos.</li>
+</ul>
+<h2 id="versao-20231030">Versão 2023.10.30</h2>
+<ul>
+<li>Correção na chamada do botão + para cadastrar nova empresa.</li>
+<li>Correção para apresentação das configurações dos dispositivos.</li>
+<li>Correção na busca do campo de filtro em Monitoramento de Acessos.</li>
+<li>Correção na busca do campo de filtro em Monitoramento de Alarmes.</li>
+<li>Liberação do sistema para utilização de 2 bases de dados para um mesmo CNPJ.</li>
+<li>Correção na exibição dos relatórios do monitoramento de acessos quando um registro de dispositivo é excluído.</li>
+<li>Correção na exibição de perfil de acesso que some após exclusão de única pessoa.</li>
+<li>Correção ao vincular um documento formato PDF.</li>
+</ul>
+<h2 id="hotfix-20231026">Hotfix 2023.10.26</h2>
+<ul>
+<li>Correção problemas com feedback de Ultimos acessos em dashboard.</li>
+</ul>
+<h2 id="versao-20231023">Versão 2023.10.23</h2>
+<ul>
+<li>Correção erro ao salvar configurações alteradas na tela de Configurações &gt; Sistema.</li>
+<li>Adicionar área de origem no cadastro de dispositivos para trabalhar com rota de acesso.</li>
+<li>Visualização de grupos no perfil do operador (grupos ainda sem pessoas).</li>
+<li>Exportação CSV dos documentos em Relatórios &gt; Acessos Gerais.</li>
+<li>Segmentar a informação de Grupos e Empresas em colunas excluisvas nos relatórios de acesso.</li>
+<li>Na edição de grupos listar apenas as pessoas não vinculadas para adicionar ao grupo.</li>
+<li>Adicionado busca pelo número do cartão na tela de pessoas e visitantes.</li>
+</ul>
+<h2 id="hotfix-20231018">Hotfix 2023.10.18</h2>
+<ul>
+<li>Correção no campo de filtro de Pessoa nos relatórios de acesso.</li>
+<li>Correção para salvar foto na alteração do cadastro de pessoas/visitantes.</li>
+</ul>
+<h2 id="versao-20231016">Versão 2023.10.16</h2>
+<ul>
+<li>Correção do envio do convite de visitante enviado por Whatsapp.</li>
+<li>Correção do problema de operador com permissão para visualização seções não permitidas.</li>
+<li>Correção do problema ao atribuir perfil de acesso na tela de edição de perfis.</li>
+<li>Correção do problema ao salvar a alteração de um tipo de cartão.</li>
+<li>Correção do problema ao cadastrar cartão onde constava que cartão estava em uso.</li>
+<li>Melhoria: Escolha e utilização de webcam secundária como prioritária.</li>
+<li>Melhoria: Exibição no modal adicionar pessoas aos grupoas apenas pessoas ainda não vinculadas.</li>
+<li>Melhoria: Campo de senha de acesso ao iDSecure não será mais exibida na edição do cadastro de pessoa.</li>
+</ul>
+<h2 id="hotfix-20231010">Hotfix 2023.10.10</h2>
+<ul>
+<li>Correção na exibição dos registros da tela de Perfis de Acesso.</li>
+</ul>
+<h2 id="versao-20231009">Versão 2023.10.09</h2>
+<ul>
+<li>Correção na falha de recuperação de senha.</li>
+<li>Correção na falha do login utilizando e-mail anteriormente excluído.</li>
+<li>Correção na operação de adicionar pessoas na edição de um grupo.</li>
+<li>Adicionado filtro de Grupos e Empresas no Relatório de Status Atual.</li>
+<li>Ajuste no cadastro da catraca iDBlock Next.</li>
+</ul>
+<h2 id="hotfix-20231004">Hotfix 2023.10.04</h2>
+<ul>
+<li>Correção da tratativa do serial da catraca iDBlock Next.</li>
+</ul>
+<h2 id="versao-20230929">Versão 2023.09.29</h2>
+<ul>
+<li>Revisão da tradução para inglês de funcionalidades no iDSecure.</li>
+<li>Adicionado novo campo: Ramal Interfone no cadastro de pessoas/visitants para uso com Interfonia.</li>
+<li>Adicionado nova opção de dipositivo: iDBlock Next em Dispositivos.</li>
+<li>Correção na edição de iDBlock Facial quando for desativado/reativado um dispositivo.</li>
+<li>Correção para exibição correta de Veículos e Estacionamento no menu.</li>
+<li>Correção no Filtro de Busca em Grupo de pessoas.</li>
+<li>Correção na edição do Código de Verificação do dispositivo iDFace.</li>
+</ul>
+<h2 id="hotfix-20230927">Hotfix 2023.09.27</h2>
+<ul>
+<li>Cartão permanece vinculado ao Visitante após o mesmo ser deletado.</li>
+</ul>
+<h2 id="hotfix-20230923">Hotfix 2023.09.23</h2>
+<ul>
+<li>Erro ao adicionar uma pessoa/visitante a um grupo ou empresas.</li>
+</ul>
+<h2 id="versao-20230922">Versão 2023.09.22</h2>
+<ul>
+<li>Correção falha ao promover um visitante para Pessoa.</li>
+<li>Correção erro ao gerar csv relatórios de documentos expirados e pessoas na lista de bloqueio.</li>
+<li>Adição nova funcionalidade, deletar um registro permanentemente.</li>
+<li>Correção Gerenciamento de Créditos, erro na validação da QUANTIDADE MÁXIMA DE CONSUMO DIÁRIO não está sendo respeitado no sistema no momento.</li>
+<li>Ajuste no filtro de seleção do período de consulta (Data e Hora) no Relatório de Acessos.</li>
+</ul>
+<h2 id="hotfix-20230921">Hotfix 2023.09.21</h2>
+<ul>
+<li>Correção na geração do QRCode enviado na primeira vez.</li>
+<li>Correção na exportação csv de relatório para período que não possui registros.</li>
+<li>Correção na exportação de csv nas colunas de Acessos Gerais.
+<em>Adição da coluna Profissão em Relatórios.
+</em>Desativação da opção do menu de Notificações de dispositivo.</li>
+<li>Correção no filtro por periodo em relatórios de Acessos.</li>
+</ul>
+<h2 id="hotfix-20230918">Hotfix 2023.09.18</h2>
+<p>*Correção: Lentidão do carregamento dos grupos na edição de visitantes e pessoas.</p>
+<h2 id="versao-20230519">Versão 2023.05.19</h2>
+<ul>
+<li>Funcionalidade: Monitoramento de alarmes.</li>
+<li>Funcionalidade: Remote Onboarding.</li>
+<li>Funcionalidade: Filtro por cartões.</li>
+<li>Funcionalidade: Formato 24H.</li>
+<li>Funcionalidade: Integração iDBio.</li>
+<li>Funcionalidade: Adicionado loader em dashboard.</li>
+<li>Bug: Correção no relatório de pessoas bloqueadas "L" maiúsculo.</li>
+<li>Bug: Correção no filtro de relatório de acesso negado de pessoas bloqueadas.</li>
+<li>Bug: Correção nas fotos de monitoramento.</li>
+</ul>
+<h2 id="versao-20230419">Versão 2023.04.19</h2>
+<ul>
+<li>Funcionalidade: Registro de Fotos de Usuários.</li>
+<li>Bug: Correção de senha ao adicionar uma pessoa</li>
+</ul>
+<h2 id="versao-20230418">Versão 2023.04.18</h2>
+<ul>
+<li>Correção: Não está cadastranto cartão remoto em visitantes</li>
+<li>Funcionalidade: Tela de releases</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.5.3
+Build Date UTC : 2023-12-27 17:34:03.277774+00:00
+-->
